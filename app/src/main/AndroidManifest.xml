@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.projectdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tt"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Create_account" />
+        <activity android:name=".Image_gallery" />
+        <activity
+            android:name=".ConformOrderActivity"
+            android:parentActivityName=".CartViewActivity" />
+        <activity android:name=".CartViewActivity" />
+        <activity android:name=".OrderPage" />
+        <activity
+            android:name=".Tab_Activity"
+            android:label="@string/title_activity_tab_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DashBoardActivity"
+            android:label="@string/title_activity_dash_board"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".LoginDataActivity"
+            android:label="LoginData" />
+    </application>
+
+</manifest>
